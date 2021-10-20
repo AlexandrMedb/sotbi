@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap");
+
+.container {
+  padding-top: 10px;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo1 {
+  &::first-letter {
+    color: red;
+    text-transform: capitalize;
+    font-weight: normal;
+  }
+}
+
+.logo2 {
+  &::before {
+    content: "яндекс ";
+    font-weight: bold;
+  }
+  &::first-letter {
+    color: red;
+    text-transform: capitalize;
+    font-weight: normal;
+  }
+}
+
+.logo3 {
+  font-weight: bold;
+  position: relative;
+  &::first-letter {
+    color: red;
+    font-weight: normal;
+  }
+  &::after {
+    content: "Такси";
+    padding: 0 10px;
+    margin-left: 10px;
+    font-weight: normal;
+    border: 4px solid gold;
+    border-right: none;
+  }
+  &::before {
+    position: absolute;
+    left: 168px;
+    top: 1.1px;
+    display: inline-block;
+    content: " ";
+    width: 20px;
+    height: 24px;
+    border: 4px solid gold;
+    border-left: none;
+    border-bottom: none;
+    transform: rotate(45deg);
+  }
+}
+
+.task2 {
+  text-decoration: underline white;
+  transition: 1s ease text-decoration;
+  &:hover {
+    text-decoration: underline black;
+  }
+}

@@ -1,0 +1,73 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap");
+.container {
+  padding-top: 10px;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo1::first-letter {
+  color: red;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+
+.logo2::before {
+  content: "яндекс ";
+  font-weight: bold;
+}
+
+.logo2::first-letter {
+  color: red;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+
+.logo3 {
+  font-weight: bold;
+  position: relative;
+}
+
+.logo3::first-letter {
+  color: red;
+  font-weight: normal;
+}
+
+.logo3::after {
+  content: "Такси";
+  padding: 0 10px;
+  margin-left: 10px;
+  font-weight: normal;
+  border: 4px solid gold;
+  border-right: none;
+}
+
+.logo3::before {
+  position: absolute;
+  left: 168px;
+  top: 1.1px;
+  display: inline-block;
+  content: " ";
+  width: 20px;
+  height: 24px;
+  border: 4px solid gold;
+  border-left: none;
+  border-bottom: none;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.task2 {
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
+  -webkit-transition: 1s ease text-decoration;
+  transition: 1s ease text-decoration;
+}
+
+.task2:hover {
+  -webkit-text-decoration: underline black;
+          text-decoration: underline black;
+}
+/*# sourceMappingURL=index.css.map */
